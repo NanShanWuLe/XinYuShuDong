@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/TX_background"
+    tools:context=".DiaryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="right"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="115dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/yearTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:textSize="14dp"
+                android:text="2021"
+                android:textColor="@color/black"/>
+            <TextView
+                android:id="@+id/monthTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="@string/month_string"
+                android:textColor="@color/black"
+                android:textSize="20dp"/>
+        </LinearLayout>
+        <ImageView
+            android:id="@+id/bottle_btn"
+            android:clickable="true"
+            android:layout_marginRight="10dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/bottle"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="660dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="right"
+        android:layout_height="60dp">
+        <ImageView
+            android:id="@+id/setting"
+            android:clickable="true"
+            android:layout_marginRight="20dp"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/setting"/>
+    </LinearLayout>
+
+    <DatePicker
+        android:id="@+id/datePickerStart"
+        android:layout_marginTop="500dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:calendarViewShown="false"
+        android:datePickerMode="spinner"/>
+
+</LinearLayout>

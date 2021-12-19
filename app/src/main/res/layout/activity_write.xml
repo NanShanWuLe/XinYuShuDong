@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/TX_background"
+    tools:context=".WriteActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+        <TextView
+            android:id="@+id/day_write"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="12"
+            android:textSize="60dp"
+            android:textColor="@color/write_page"
+            android:gravity="center"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="70dp">
+
+            <TextView
+                android:id="@+id/month_write"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="1月"
+                android:textSize="25dp"
+                android:gravity="center"
+                android:textColor="@color/write_page"/>
+            <TextView
+                android:id="@+id/year_write"
+                android:layout_marginLeft="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2021年"
+                android:textSize="15dp"
+                android:textColor="@color/write_page"/>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/weather_img"
+            android:clickable="true"
+            android:layout_gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/weather"
+            android:layout_marginRight="20dp"/>
+
+        <TextView
+            android:id="@+id/write_done"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="完成"
+            android:textSize="35dp"
+            android:gravity="center"
+            android:textColor="@color/write_Done"
+            android:layout_marginLeft="50dp"
+            />
+    </LinearLayout>
+
+    <EditText
+        android:focusableInTouchMode="true"
+        android:focusable="true"
+        android:id="@+id/content"
+        android:hint="暂无内容"
+        android:gravity="start"
+        android:layout_margin="5dp"
+        android:background="@null"
+        android:layout_width="match_parent"
+        android:layout_height="500dp"/>
+
+
+</LinearLayout>
